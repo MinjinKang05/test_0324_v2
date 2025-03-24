@@ -9,10 +9,12 @@
         margin:0;
         height: 2000px;
     }
-    section{
-        width: 100%;
-        height: 100vh;
-    }
+    section {
+  width: 100%;
+  height: 100vh;
+  scroll-margin-top: 120px; /* 메뉴바 높이만큼 보이도록 */
+}
+
     .wrapper {
         padding: 200px;
         max-width: 1200px;
@@ -28,14 +30,14 @@ h2 {
 font-size: 32px;
 }
 h3{
-    font-style: 24px;
+    font-size: 24px;
     font-weight:300
 }
 .btns {
     position:fixed;
     top:0;
     width: 100%;
-    z-index:10
+    z-index:10;
 }
 .btns .container{
     position: relative;
@@ -123,7 +125,12 @@ button{
 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum rerum nostrum, aspernatur porro dolore aliquam, mollitia omnis magni magnam odit quisquam totam, deserunt tempore architecto veritatis. Facere rem cumque dolorum?</h3>
     </div>
 </section>
-<script><!--Contact--> 
+
+
+
+<script>
+
+
 const btnHome = document.querySelector('.btn.home'); // 버튼 선택
 const sectionHome = document.querySelector('#home'); // 섹션 선택
 
@@ -131,6 +138,41 @@ btnHome.addEventListener('click', function() {
   sectionHome.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 부드럽게 스크롤
 });
 
+
+
+const btnAbout = document.querySelector('.btn.about'); // 버튼 선택
+const sectionAbout = document.querySelector('#about'); // 섹션 선택
+
+btnAbout.addEventListener('click', function() {
+    sectionAbout.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 부드럽게 스크롤
+});
+
+
+
+const btnSkills = document.querySelector('.btn.skills'); // 버튼 선택
+const sectionSkills = document.querySelector('#skills'); // 섹션 선택
+
+btnSkills.addEventListener('click', function() {
+    sectionSkills.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 부드럽게 스크롤
+});
+
+
+
+const btnWorks = document.querySelector('.btn.works'); // 버튼 선택
+const sectionWorks = document.querySelector('#works'); // 섹션 선택
+
+btnWorks.addEventListener('click', function() {
+    sectionWorks.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 부드럽게 스크롤
+});
+
+
+
+const btnContact = document.querySelector('.btn.contact'); // 버튼 선택
+const sectionContact = document.querySelector('#contact'); // 섹션 선택
+
+btnContact.addEventListener('click', function() {
+    sectionContact.scrollIntoView({ behavior: 'smooth', block: 'center' }); // 부드럽게 스크롤
+});
 </script>
 </body>
 </html>
